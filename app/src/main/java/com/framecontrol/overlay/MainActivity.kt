@@ -308,8 +308,7 @@ class MainActivity : AppCompatActivity() {
 
             val gridName = GridType.values()[preset.gridOrdinal.coerceIn(0, GridType.values().size - 1)].title
             val infoText = TextView(this).apply {
-                text = "${preset.name}
-${preset.width}x${preset.height}px • $gridName"
+                text = "${preset.name}\n${preset.width}x${preset.height}px • $gridName"
                 setTextColor(Color.WHITE)
                 textSize = 12.5f
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
